@@ -1,0 +1,50 @@
+/* Typography */
+/* Colors */
+/* Gutters */
+body {
+  color: #4b4b4b; }
+
+h1 {
+  font-family: "Montserrat", sans-serif; }
+
+h2 {
+  font-family: "Montserrat", sans-serif; }
+
+h3 {
+  font-family: "Montserrat", sans-serif; }
+
+h4 {
+  font-family: "Montserrat", sans-serif; }
+
+h5 {
+  font-family: "Domine", serif; }
+
+h6 {
+  font-family: "Domine", serif; }
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  color: #049372; }
+
+/* Typography */
+/* Colors */
+/* Gutters */
+header {
+  background-color: #049372; }
+  header h1 {
+    color: #fff; }
+    header h1 span {
+      color: #07f6bf; }
+  header nav {
+    margin-top: 12px;
+    margin-bottom: 10px; }
+    header nav ul {
+      margin: 0px;
+      padding: 0px; }
+      header nav ul li {
+        position: relative;
+        list-style: none;
+        display: inline-block;
+        font-size: 22px;
+        padding: 10px 20px; }
+        header nav ul li a {
+          color: #fff; }
