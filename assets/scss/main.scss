@@ -1,7 +1,13 @@
 @import "variables.scss";
+@import "circle.scss";
 
 body {
   color:$text-color;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
 }
 
 h1 {
@@ -29,9 +35,127 @@ h6 {
 }
 
 h1,h2,h3,h4,h5,h6 {
+  font-weight: 100;
   span {
     color:$primary-color;
   }
+}
+
+body {
+  font-family: $primary-font-family;
+  font-weight:300;
+}
+
+.box {
+  border-radius:4px;
+  padding: $gutter-row-width;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.alignleft {
+  float:left;
+}
+.alignright {
+  float:right;
+}
+
+.grid {
+  padding:$gutter-row-width;
+  .box {
+    //  background-color:rgba(0,0,0,0.45);
+    padding:($gutter-row-width / 2) $gutter-row-width;
+  }
+  .post {
+    padding-top:$gutter-row-width / 2;
+    padding-bottom:$gutter-row-width / 2;
+    .overlay {
+      position:absolute;
+      bottom:0px;
+      z-index:100;
+      width:100%;
+      height:95px;
+      background-color:rgba(255,255,255,0.60);
+      padding:10px;
+      h3 {
+        font-size:20px;
+        font-weight: bold;
+        margin-top:0px;
+        margin-bottom:5px;
+      }
+      p {
+        font-size:12px;
+      }
+      .btn {
+        margin-left:15px;
+        font-size:12px;
+      }
+    }
+  }
+}
+
+.social-icons {
+  padding:$gutter-row-width / 2;
+  .container {
+    max-width: 480px;
+  }
+}
+
+.blog {
+  padding:$gutter-row-width;
+  h2 {
+    margin-top:0px;
+  }
+  .twitter-card {
+    .text-center {
+      text-align: left;
+    }
+  }
+  .post {
+    padding:($gutter-row-width / 2) 0px;
+    border-bottom:1px solid #eee;
+    position: relative;
+    h3 {
+      margin-top:5px;
+    }
+    .btn-circle {
+      margin-right:20px;
+      margin-top:10px;
+    }
+  }
+}
+
+.twitter-card {
+  .logo {
+    position:relative;
+    img {
+      max-width: 45%;
+      border-radius:100%;
+      z-index: 120;
+      position: relative;
+      border: 30px solid #ffffff;
+      background-color:#4d4d4d;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: -3em;
+      width: calc(100% + 6em);
+      height: 1px;
+      z-index: -1;
+      background: #eee;
+      z-index: 100;
+    }
+  }
+
+  .social-icons {
+    padding:$gutter-row-width;
+  }
+
 }
 
 
